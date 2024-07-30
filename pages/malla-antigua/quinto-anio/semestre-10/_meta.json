@@ -1,0 +1,12 @@
+{
+  "proyecto-informatico": "Proyecto Informático",
+  "memoria-de-titulo": "Memoria de Título",
+  "electivo-v": {
+    "title": "Electivo V",
+    "href": "/electivos"
+  },
+  "electivo-vi": {
+    "title": "Electivo VI",
+    "href": "/electivos"
+  }
+}

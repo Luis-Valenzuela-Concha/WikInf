@@ -1,0 +1,10 @@
+{
+  "economia": "Economía",
+  "arquitectura-de-computadores": "Arquitectura de Computadores",
+  "teoria-de-computacion": "Teoría de Computación",
+  "bases-de-datos-i": "Bases de Datos I",
+  "complementario-3": {
+    "title": "Complementario III",
+    "href": "/complementarios"
+  }
+}

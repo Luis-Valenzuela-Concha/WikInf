@@ -1,0 +1,13 @@
+{
+  "formulacion-y-evaluacion-de-proyectos": "Formulación y Evaluación de Proyectos",
+  "sistemas-operativos": "Sistemas Operativos",
+  "analisis-de-algoritmos": "Análisis de Algoritmos",
+  "electivo-ii": {
+    "title": "Electivo II",
+    "href": "/electivos"
+  },
+  "complementario-iv": {
+    "title": "Complementario IV",
+    "href": "/complementarios"
+  }
+}
