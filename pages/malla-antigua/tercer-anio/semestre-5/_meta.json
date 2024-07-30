@@ -1,0 +1,9 @@
+{
+  "estadistica": "Estadística",
+  "mecanica-y-termodinamica": "Mecánica y Termodinámica",
+  "estructura-de-datos": "Estructura de Datos",
+  "electiva-1": {
+    "title": "Electivo I",
+    "href": "/electivos"
+  }
+}

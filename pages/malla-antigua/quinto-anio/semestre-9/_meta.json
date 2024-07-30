@@ -1,0 +1,10 @@
+{
+  "ingenieria-de-software-ii": "Ingeniería de Software II",
+  "inteligencia-artificial": "Inteligencia Artificial",
+  "informatica-y-sociedad": "Informática y Sociedad",
+  "gestion-informatica": "Gestión Informática",
+  "electivo-iv": {
+    "title": "Electivo IV",
+    "href": "/electivos"
+  }
+}

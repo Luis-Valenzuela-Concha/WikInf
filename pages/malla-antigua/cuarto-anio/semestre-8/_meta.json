@@ -1,0 +1,10 @@
+{
+  "optimizacion-i": "Optimización I",
+  "gestion-de-empresas": "Gestión de Empresas",
+  "redes-de-computadores": "Redes de Computadores",
+  "ingenieria-de-software-i": "Ingeniería de Software I",
+  "electivo-iii": {
+    "title": "Electivo III",
+    "href": "/electivos"
+  }
+}

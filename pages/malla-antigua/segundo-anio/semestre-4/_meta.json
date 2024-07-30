@@ -1,0 +1,10 @@
+{
+  "calculo-numerico": "Cálculo Numerico",
+  "electromagnetismo-aplicado": "Electromagnetismo Aplicado",
+  "programacion-ii": "Programación II",
+  "matematicas-discretas": "Matemáticas Discretas",
+  "complementaria-1": {
+    "title": "Complementario I",
+    "href": "/complementarios"
+  }
+}
