@@ -1,7 +1,20 @@
 export default {
-    logo: <span>My Nextra Documentation</span>,
-    project: {
-      link: 'https://github.com/shuding/nextra'
+    useNextSeoProps() {
+      return {
+        titleTemplate: 'WikInf - %s'
+      }
+    },
+    logo: <span>WikInf</span>,
+    gitTimestamp: (data) => <>Última actualización {new Date(data?.timestamp).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</>,
+    search: {
+      placeholder: 'Buscar información...',
+      error: 'Ocurrió un error inesperado',
+      emptyResult: () => <span className="nx-block nx-select-none nx-p-8 nx-text-center nx-text-sm nx-text-gray-400">No se encontraron resultados</span>,
+    },
+    editLink: {
+      text: "Constribuye a esta página"
+    },
+    feedback: {
+      content: null
     }
-    // ... other theme options
   }

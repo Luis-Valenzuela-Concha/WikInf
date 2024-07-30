@@ -1,0 +1,3 @@
+.disable-steps h3::before {
+    content: "" !important;
+}
