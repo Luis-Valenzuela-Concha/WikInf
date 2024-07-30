@@ -1,1 +1,1 @@
-# wikinf
+# WikInf
