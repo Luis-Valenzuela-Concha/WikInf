@@ -1,0 +1,27 @@
+{
+  "sistemas-distribuidos-y-paralelismo": "Sistemas Distribuidos y Paralelismo",
+  "electivo-2": {
+    "title": "Electivo II",
+    "href": "/electivos"
+  },
+  "electivo-3": {
+    "title": "Electivo III",
+    "href": "/electivos"
+  },
+  "electivo-4": {
+    "title": "Electivo IV",
+    "href": "/electivos"
+  },
+  "electivo-5": {
+    "title": "Electivo V",
+    "href": "/electivos"
+  },
+  "complementario-3": {
+    "title": "Complementario III",
+    "href": "/complementarios"
+  },
+  "complementario-4": {
+    "title": "Complementario IV",
+    "href": "/complementarios"
+  }
+}

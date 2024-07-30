@@ -1,0 +1,26 @@
+{
+  "electivo-6": {
+    "title": "Electivo VI",
+    "href": "/electivos"
+  },
+  "electivo-7": {
+    "title": "Electivo VII",
+    "href": "/electivos"
+  },
+  "electivo-8": {
+    "title": "Electivo VIII",
+    "href": "/electivos"
+  },
+  "electivo-9": {
+    "title": "Electivo IX",
+    "href": "/electivos"
+  },
+  "complementario-5": {
+    "title": "Complementario V",
+    "href": "/complementarios"
+  },
+  "complementario-6": {
+    "title": "Complementario VI",
+    "href": "/complementarios"
+  }
+}

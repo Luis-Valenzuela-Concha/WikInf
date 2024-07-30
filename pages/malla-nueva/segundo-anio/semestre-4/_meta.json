@@ -1,0 +1,11 @@
+{
+  "calculo-numerico": "Cálculo Numérico",
+  "ingenieria-de-software": "Ingeniería de Software",
+  "matematicas-discretas": "Matemáticas Discretas",
+  "proyecto-de-programacion": "Proyecto de Programación",
+  "sistemas-operativos": "Sistemas Operativos",
+  "complementario-1":{
+    "title": "Complementario I",
+    "href": "/complementarios"
+  }
+}
