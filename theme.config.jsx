@@ -1,10 +1,19 @@
+import Image from 'next/image';
+
 export default {
   useNextSeoProps() {
     return {
       titleTemplate: "%s - WikInf",
     };
   },
-  logo: <span>WikInf</span>,
+  logo: (
+    <>
+      <Image src={require('./assets/img/logo_wikinf.png')} width={30}/>
+      <span style={ {marginLeft: '.4em', fontSize:'1.5em', fontWeight:'600' }}>
+        WikInf
+      </span>
+    </>
+  ),
   gitTimestamp: (data) => (
     <>
       Última actualización{" "}
