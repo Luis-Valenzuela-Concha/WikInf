@@ -16,6 +16,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           script: |
             export NVM_DIR=~/.nvm
+            export PATH=~/.local/share/pnpm:$PATH
             source ~/.nvm/nvm.sh
             cd ~/WikInf
             git pull
