@@ -33,6 +33,7 @@ export default {
       </span>
     ),
   },
+  docsRepositoryBase: "https://github.com/Luis-Valenzuela-Concha/WikInf/tree/main",
   editLink: {
     text: "Constribuye a esta página →",
   },
