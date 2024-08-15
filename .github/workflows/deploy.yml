@@ -1,0 +1,22 @@
+name: Auto deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy last changes
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          script: |-
+            cd ~/Wikinf
+            git pull
+            pnpm install
+            pnpm build
+            pm2 restart wikinf
