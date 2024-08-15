@@ -1,4 +1,5 @@
-import Image from 'next/image';
+import Footer from "./components/ui/Footer";
+import Logo from "./components/ui/Logo";
 
 export default {
   useNextSeoProps() {
@@ -6,12 +7,16 @@ export default {
       titleTemplate: "%s - WikInf",
     };
   },
-  logo: (
+  logo: <Logo />,
+  head: (
     <>
-      <Image src={require('./assets/img/logo_wikinf.png')} width={30}/>
-      <span style={ {marginLeft: '.4em', fontSize:'1.5em', fontWeight:'600' }}>
-        WikInf
-      </span>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="WikInf" />
+      <meta
+        property="og:description"
+        content="Información para estudiantes de Ingeniería Civil Informática de la Universidad de Concepción"
+      />
+      <link rel="icon" href="/assets/logo_wikinf.png" sizes="any" />
     </>
   ),
   gitTimestamp: (data) => (
@@ -33,7 +38,8 @@ export default {
       </span>
     ),
   },
-  docsRepositoryBase: "https://github.com/Luis-Valenzuela-Concha/WikInf/tree/main",
+  docsRepositoryBase:
+    "https://github.com/Luis-Valenzuela-Concha/WikInf/tree/main",
   editLink: {
     text: "Constribuye a esta página →",
   },
@@ -51,5 +57,8 @@ export default {
         system: "Sistema",
       };
     },
+  },
+  footer: {
+    text: <Footer />,
   },
 };

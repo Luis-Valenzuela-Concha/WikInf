@@ -1,21 +1,77 @@
 import { Cards, Card } from 'nextra/components'
+import Image from 'next/image'
 
-# Cómo hacer tu horario
-| Bloque | Hora |
-| :----: | :---- |
-| **(1)** | 08:15 - 09:00 |
-| **(2)** | 09:15 - 10:00 |
-| **(3)** | 10:15 - 11:00 |
-| **(4)** | 11:15 - 12:00 |
-| **(5)** | 12:15 - 13:00 |
-| **(6)** | 13:15 - 14:00 |
-| **(7)** | 14:15 - 15:00 |
-| **(8)** | 15:15 - 16:00 |
-| **(9)** | 16:15 - 17:00 |
-| **(10)** | 17:15 - 18:00 |
-| **(11)** | 18:15 - 19:00 |
-| **(12)** | 19:15 - 20:00 |
-| **(13)** | 20:15 - 21:00 |
+# Horario
 
-## Inserte tutorial
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## ¿Porque tengo que hacer mi propio horario?
+
+La universidad simplemente no lo hace, solo libera un PDF con los horarios y aula de cada asignatura.
+
+La razón de por que no te entregan el horario ya hecho es por razones históricas, existe una unidad que coordina los horarios de la aulas comunes (Los Cubos, el Plato, etc.) pero cada facultad se encarga de sus horarios y sus propias aulas a través de su secretaria académica. Este sistema era el único posible en el mundo análogo, cuando la mejor forma de mostrar los horarios era con una hoja impresa en una pared de la misma facultad.
+
+Nunca existió un sistema centralizado, así que nunca se creo una pagina que te entregara tu horario prehecho.
+
+## Códigos de asignatura
+
+Cada ramo tiene un código que lo identifica e indica su sección. Por ejemplo:
+
+**Introducción a Ramo Ficticio** tiene el código 967892-5. El número 967892 identifica tu ramo exacto (pueden existir ramos con el mismo nombre) y el 5 indica que estas en la sección 5.
+
+Puedes conseguir los códigos de tus asignaturas yendo a [alumnos.udec.cl](https://alumnos.udec.cl/), haciendo click en INFODA y seleccionado “Lista de Clases”. Ahora con tu código puedes buscar tu ramo en el PDF con los horarios. (CTRL+F es tu amigo)
+
+## Conseguir los PDFs con los horarios
+
+Se encuentra en la pagina de la [Oficina Virtual](http://ofivirtualfi.udec.cl/schedulesDates). La Oficina Virtual tiende a hacer leves modificaciones los primeros días de clases, así que hay que fijarse en la ultima versión del horario. A veces los ramos de matemática no aparecen en el horario de la Oficina Virtual, así que se puede revisar en los [horarios](https://www.cfm.cl/pregrado/horarios/) de la CFM, haciendo click en Ingeniería Matemática o Matemática.
+
+## Descifrar los horarios
+
+El formato de los horarios es un poco confuso al principio, sigamos con el ejemplo de **Introducción a Ramo Ficticio** para entenderlo.
+
+| Código    | Asignatura                  | CR | HT | HP | HL | Carrera | Profesor(es)      | Horarios y Salas                                    |
+|-----------|-----------------------------|----|----|----|----|---------|-------------------|-----------------------------------------------------|
+| 967892-5  | Introducción a Ramo Ficticio| 4  | 3  | 2  | 0  | INF 3   | Profesor Fulano   | [T] Lu 8,9 (A-413) - Ju 10 (IS 2-1) [P] Vi 10,11 (TM 3-9) |
+
+El significado de código, asignatura y profesor son obvios. Recuerda revisar bien la sección, es muy fácil equivocarse.
+
+- **CR**: Creditos (Cuanto “vale” un ramo, depende las horas que requiere a la semana)
+- **HT**: Horas Teóricas Semanales (Clases normales)
+- **HP**: Horas Practicas Semanales (Normalmente se resuelven ejercicios con un ayudante)
+- **HL**: Horas de Laboratorio Semanales
+
+[T], [P] y [L] son clase teórica, practica y laboratorio respectivamente. (A-413), (IS 2-1) y (TM 3-9) se refieren a las aulas.
+
+<Image src="/assets/plano-aulas.png" alt="Plano referencial de aulas" width={500} height={500} style={{
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: '1.5rem'
+}}/>
+
+Las aulas de la Facultad y nuestro departamento no aparecen en esta imagen. (TM 3-9) es la aula 9 en el piso 3 del edificio Tecnológico Mecánico y (IS 2-1) es la aula 1 en el piso 2 del Edificio de Sistemas.
+
+(Lu 8,9), (Ju 10) y (Vi 10,11) se refieren a los días y a los bloques horarios que corresponden cada clase.
+
+<div style={{ display: 'flex', width: '100%', marginTop: '1.5rem'}}>
+    <div style={{width: '100%', display: 'flex', justifyContent: 'right'}}>
+        | Bloque | Hora |
+        | :----: | :---- |
+        | **(1)** | 08:15 - 09:00 |
+        | **(2)** | 09:15 - 10:00 |
+        | **(3)** | 10:15 - 11:00 |
+        | **(4)** | 11:15 - 12:00 |
+        | **(5)** | 12:15 - 13:00 |
+        | **(6)** | 13:15 - 14:00 |
+        | **(7)** | 14:15 - 15:00 |
+    </div>
+    <div style={{width: '100%', display: 'flex', justifyContent: 'left' }}>
+        | Bloque | Hora |
+        | :----: | :---- |
+        | **(8)** | 15:15 - 16:00 |
+        | **(9)** | 16:15 - 17:00 |
+        | **(10)** | 17:15 - 18:00 |
+        | **(11)** | 18:15 - 19:00 |
+        | **(12)** | 19:15 - 20:00 |
+        | **(13)** | 20:15 - 21:00 |
+    </div>
+</div>
+
+Entonces **[T] Lu 8,9 (A-413) - Ju 10 (IS 2-1) [P] Vi 10,11 (TM 3-9)** se traduce a “Tenemos clases teóricas los lunes desde 15:15 a 17:00 en el cubo 4 y los jueves desde 17:15 a 18:00 en Sistemas. Las clases practicas son los viernes desde 17:15 a 19:00 en el TM”
