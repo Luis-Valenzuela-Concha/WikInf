@@ -15,7 +15,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |-
-            cd ~/Wikinf
+            exec bash
+            cd ~/WikInf
             git pull
             pnpm install
             pnpm build
