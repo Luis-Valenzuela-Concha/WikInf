@@ -6,5 +6,17 @@
   "malla-nueva": "Malla nueva",
   "malla-antigua": "Malla antigua",
   "electivos": "Electivos",
-  "complementarios": "Complementarios"
+  "complementarios": "Complementarios",
+  "linktree-link": {
+    "title": "Enlaces útiles ↗",
+    "href": "https://linktr.ee/cainf",
+    "newWindow": true
+  },
+  "404": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  }
 }
