@@ -1,0 +1,26 @@
+name: Auto deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    if: github.repository == 'Luis-Valenzuela-Concha/WikInf'
+    steps:
+      - name: Deploy last changes
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          script: |
+            export NVM_DIR=~/.nvm
+            export PATH=~/.local/share/pnpm:$PATH
+            source ~/.nvm/nvm.sh
+            cd ~/WikInf
+            git pull
+            pnpm install
+            pnpm build
+            pm2 restart wikinf > /dev/null 2>&1
