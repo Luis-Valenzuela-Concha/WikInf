@@ -1,6 +1,68 @@
 import { Cards, Card } from 'nextra/components'
+import { Steps } from 'nextra/components'
+import { Callout } from 'nextra/components'
+import Image from 'next/image'
+ 
 
 # Cómo contribuir
+Esta *Wiki* está diseñada para ser una herramienta colaborativa y en constante evolución. Todos los estudiantes de la carrerra están invitados a aportar sus conocimientos y experiencias. Ya sea corrigiendo errores, actualizando información o agregando nuevos contenidos, tu contribución ayuda a mantener este recurso actualizado y útil para todos. A continuación, te explicamos los pasos para participar y mejorar esta plataforma. 
 
-## Tutorial
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Tutorial paso a paso
+<Steps>
+### Crea un fork del repositorio de [WikInf](https://github.com/Luis-Valenzuela-Concha/WikInf) en GitHub
+    1. En la esquina superior derecha del repositorio, haz clic en el botón **Fork**.
+    <img src="https://i.imgur.com/ZmZlzQt.png" width={400} className='mx-auto'/>
+    2. Luego selecciona **Create fork** para crear una copia del repositorio en tu cuenta de GitHub.
+
+### Clona el repositorio en tu máquina local
+Ahora tienes un fork del repositorio de WikInf, pero no tienes los archivos de ese repositorio localmente en tu computadora.
+    1. En tu fork del repositorio de WikInf, haz clic en el botón **Code**.
+    2. Copia la **URL** del repositorio.
+    <img src="https://i.imgur.com/NOaaxmg.png" width={400} className='mx-auto'/>
+    3. Abre tu terminal y navega a la carpeta donde deseas clonar el repositorio.
+    4. Escribe el siguiente comando en tu terminal y reemplaza **USERNAME** por tu nombre de usuario de GitHub:
+    ```bash
+    git clone https://github.com/USERNAME/WikInf.git
+    ```
+
+### Crea una nueva rama
+    1. Navega a la carpeta del repositorio en tu terminal.
+    2. Escribe el siguiente comando para crear una nueva rama y reemplaza **NOMBRE-RAMA** por un nombre descriptivo:
+    ```bash
+    git checkout -b NOMBRE-RAMA
+    ```
+### Realiza los cambios necesarios
+    1. Abre el archivo que deseas editar en tu editor de código.
+    2. Realiza los cambios necesarios en el archivo.
+    3. Guarda los cambios en tu editor de código.
+### Haz un commit con los cambios realizados
+    1. Escribe el siguiente comando para agregar los cambios al área de preparación:
+    ```bash
+    git add .
+    ```
+    2. Escribe el siguiente comando para realizar un commit con un mensaje descriptivo:
+    ```bash
+    git commit -m "Mensaje descriptivo de los cambios realizados"
+    ```
+### Haz un push de la rama a tu repositorio en GitHub
+    1. Escribe el siguiente comando para subir la rama con los cambios a tu repositorio en GitHub:
+    ```bash
+    git push origin NOMBRE-RAMA
+    ```
+### Crea un pull request en el repositorio de Wikinf
+    1. En tu fork del repositorio de WikInf, haz clic en el botón **Compare & pull request**.
+    2. Escribe un título y una descripción para tu pull request.
+    3. Haz clic en el botón **Create pull request** para enviar tu pull request al repositorio de WikInf.
+### Espera a que tu pull request sea revisado y aceptado
+    1. Los colaboradores del repositorio de WikInf revisarán tu pull request y te harán comentarios si es necesario.
+    2. Una vez que tu pull request sea aceptado, tus cambios se fusionarán con el repositorio principal de WikInf.
+</Steps>
+<Callout type="info" emoji="ℹ️">
+  ¡Gracias por tu contribución al repositorio de WikInf! Si tienes alguna duda o problema, no dudes en contactar con el Centro de Alumnos de Ingeniería Civil Informática.
+</Callout>
+
+
+## Recomendaciones
+- Utiliza un editor de código como [Visual Studio Code](https://code.visualstudio.com/) para editar los archivos del repositorio.
+- Antes de realizar un pull request, asegúrate de que tu código esté bien formateado y que no contenga errores tipógraficos ni de ejecución.
