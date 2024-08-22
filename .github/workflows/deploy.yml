@@ -22,5 +22,13 @@ jobs:
             cd ~/WikInf
             git pull
             pnpm install
+            pm2 stop wikinf > /dev/null 2>&1
+            if git diff --name-only HEAD~1 HEAD | grep "_meta.json"; then
+              echo "_meta.json files changed, running extra script..."
+              if [ -d ".next"]; then
+                rm -rf .next
+                echo "Next.js build folder deleted."
+              fi
+            fi
             pnpm build
-            pm2 restart wikinf > /dev/null 2>&1
+            pm2 start wikinf > /dev/null 2>&1
